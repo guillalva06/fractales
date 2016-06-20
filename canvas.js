@@ -2,14 +2,14 @@ window.onload = init;
 
 function init(){
 	var canvas = document.getElementById("mycanvas");
-	canvas.width = 500;
-	canvas.height = 500;
+	canvas.width = 1000*2;
+	canvas.height = 1000*2;
 	var cont = canvas.getContext('2d');
-	var originalsquare = new square(0,0,500,500);
+	var originalsquare = new square(0,0,1000*2,1000*2);
 	var listsquares = [];
 	listsquares.push(originalsquare);
 	cont.strokeRect(originalsquare.x,originalsquare.y,originalsquare.w,originalsquare.h);
-	for(var i=0;i<4;i++){
+	for(var i=0;i<8;i++){
 		var newsquares = []
 		console.log(listsquares);
 		for(s in listsquares){
